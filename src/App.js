@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from './pages/Home';
+import { UserContextProvider } from './context/UserContext';
+import { MainContextProvider } from './context/MainContext';
+import Navbar from './components/Navbar';
+import SignUpModal from './components/SignUpModal';
+import SignInModal from './components/SignInModal';
+import PseudoModal from './components/PseudoModal';
+import Development from './components/Development';
+import TournamentOrga from './pages/TournamentOrga';
+import Tournament from './pages/Tournament';
+import TournamentList from './pages/TournamentList';
+import TournamentUpdate from './pages/TournamentUpdate';
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <UserContextProvider>
+        <MainContextProvider>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Development" element={<Development />} />
+            <Route path="/TournamentOrga" element={<TournamentOrga />} />
+            <Route path="/tournament" element={<Tournament />} />
+            <Route path="/tournamentlist" element={<TournamentList />} />
+            <Route path="/tournamentupdate" element={<TournamentUpdate />} />
+          </Routes>
+        </MainContextProvider>
+      </UserContextProvider>
+    </>
   );
 }
 
