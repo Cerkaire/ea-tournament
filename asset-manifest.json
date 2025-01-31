@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.2e662a65.css",
-    "main.js": "/static/js/main.1e62de24.js",
-    "index.html": "/index.html",
-    "main.2e662a65.css.map": "/static/css/main.2e662a65.css.map",
-    "main.1e62de24.js.map": "/static/js/main.1e62de24.js.map"
+    "main.css": "/ea-tournament/static/css/main.2e662a65.css",
+    "main.js": "/ea-tournament/static/js/main.256362f4.js",
+    "index.html": "/ea-tournament/index.html",
+    "main.2e662a65.css.map": "/ea-tournament/static/css/main.2e662a65.css.map",
+    "main.256362f4.js.map": "/ea-tournament/static/js/main.256362f4.js.map"
   },
   "entrypoints": [
     "static/css/main.2e662a65.css",
-    "static/js/main.1e62de24.js"
+    "static/js/main.256362f4.js"
   ]
 }
